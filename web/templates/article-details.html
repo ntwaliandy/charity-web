@@ -1,0 +1,89 @@
+<html>
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Front page</title>
+    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'web/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/details.css' %}">
+    </head>
+    </head>
+    <body>
+        <header class="header">
+            <section class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <div class="contact">
+                                <p><span class="phone"><a href="tel:+256 706 131310">Phone: +256 706 131310</a></span><span class="email"><a href="mailto:savethelittleoneuganda@gmail.com">Email: savethelittleoneuganda@gmail.com</a></span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="join-us">
+                                <p><a href="/contact">JOIN US NOW</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <a href="#">
+                                <div class="main-logo">
+                                    <img src="{% static 'web/img/main-logo.png' %}" alt="">
+                                    <h2><a href="/">Savethelittle one ug</a></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-sm-12 col-xs-12">
+                            <div class="menu">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="/">HOME</a></li>
+                                    <li><a href="/articles">ARTICLES</a></li>
+                                    <li><a href="/about">ABOUT US</a></li>
+                                    <li><a href="/contact">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <div>
+            <h1>{{ single_article.article_title }}</h1>
+            <p><strong>Author:</strong> {{single_article.author}},</p>
+
+            <div class="image-wrapper">
+                <img src="{{ single_article.picture_2.url }}" style="width: 300px; height: 300px;">
+                <img src="{{ single_article.picture_3.url }}" style="width: 300px; height: 300px;">
+                <img src="{{ single_article.picture_1.url }}" style="width: 300px; height: 300px;">
+                
+            </div>
+
+            
+            <div><p>{{ single_article.article_description }}</p></div>
+        </div>
+        
+        
+    </body>
+    
+    <script src="{% static 'web/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'web/js/animationCounter.js' %}"></script>
+    <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'web/js/active.js' %}"></script>
+</html>

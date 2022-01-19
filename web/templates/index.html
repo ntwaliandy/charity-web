@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savethelittle</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'web/css/about.css' %}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <section class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <div class="contact">
+                                <p><span class="phone"><a href="tel:+256 706 131310">Phone: +256 706 131310</a></span><span class="email"><a href="mailto:savethelittleoneuganda@gmail.com">Email: savethelittleoneuganda@gmail.com</a></span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="join-us">
+                                <p><a href="/contact">JOIN US NOW</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <a href="#">
+                                <div class="main-logo">
+                                    <img src="{% static 'web/img/main-logo.png' %}" alt="">
+                                   <h2><a href="/">Savethelittle one ug</a></h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-sm-12 col-xs-12">
+                            <div class="menu">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="/">HOME</a></li>
+                                    <li><a href="/articles">ARTICLES</a></li>
+                                    <li><a href="/about">ABOUT US</a></li>
+                                    <li><a href="/contact">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section class="carosal-area" style="background-image: url('{% static 'web/img/carosal-bg.jpg' %}')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="client owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="text">
+                                    <h3>CHILDREN NEED YOUR HELP</h3>
+                                    <p> We’re a charity helping to educate children in Uganda. Many African children are desperate to get an education <br> We're doing something about it. Help to educate the poor. No salaries to pay.  </p>
+                                    <h5 class="white-button"><a href="mailto:savethelittleoneuganda@gmail.com">DONATE NOW</a></h5>
+                                    <h5><a href="/contact">CONTACT US</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our_activity">
+            <h2>OUR ACTIVITY</h2>
+            <p>We help fund and help vulnarable people for better future. we all live once on earth. </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="single-Promo">
+                            <div class="promo-icon">
+                                <i class="material-icons"></i>
+                            </div>
+                            <h2><a href="#">Fundraising</a></h2>
+                            <p>we provide assets and money we can help our little ones move foward.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="single-Promo">
+                            <div class="promo-icon">
+                                <i class="material-icons"></i>
+                            </div>
+                            <h2><a href="#">Volunteering</a></h2>
+                            <p> we simultaneously provide services to the community such as building little houses and re-innovating the assets. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="single-Promo">
+                            <div class="promo-icon">
+                                <i class="material-icons"></i>
+                            </div>
+                            <h2><a href="#">Our Programs</a></h2>
+                            <p> we provide different programs that our little ones involve in, such as participating in anti- clubs </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="donors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="donors_input">
+                            <h2>DONATION NOW</h2>
+                            <form action="#" method="post">
+                                <p class="amount">
+                                    <label for="usd">AMOUNT : </label>
+                                    <input type="radio" name="usd" id="usd" checked>20usd
+                                    <input type="radio" name="usd" id="usd">50usd
+                                    <input type="radio" name="usd" id="usd">100usd </p>
+                                <p class="type">
+                                    <label for="type">TYPE : </label>
+                                    <input type="radio" name="time" id="type" checked>One Time
+                                    <input type="radio" name="time" id="type">Monthly
+                                    <input type="radio" name="time" id="type">Yearly <br>
+                                </p>
+                                <h5>
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Email">
+                                </h5>
+                                <h4>
+                                    <select>
+                                    <option>I Want To Donate For 1</option>
+                                    <option>I Want To Donate For 2</option>
+                                    <option>I Want To Donate For 3</option>
+                                </select>
+                                </h4>
+                                <input type="submit" value="DONATION NOW">
+                            </form>
+                        </div>
+                        <div class="donors_image">
+                            <h2>FEATURED DONORS</h2>
+                            <div class="donors_featured owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="img/donors_featured_one.jpg" alt="">
+                                    <h3>Kenneth J. Garnica</h3>
+                                    <p>Donated Amount : <span>220 USD</span> </p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/donors_featured_one.jpg" alt="">
+                                    <h3>Kenneth J. Garnica</h3>
+                                    <p>Donated Amount : <span>220 USD</span> </p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/donors_featured_one.jpg" alt="">
+                                    <h3>Kenneth J. Garnica</h3>
+                                    <p>Donated Amount : <span>220 USD</span> </p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/donors_featured_one.jpg" alt="">
+                                    <h3>Kenneth J. Garnica</h3>
+                                    <p>Donated Amount : <span>220 USD</span> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="clear"></div>
+        
+    
+
+       
+
+
+
+        
+    </div>
+    <script src="{% static 'web/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'web/js/animationCounter.js' %}"></script>
+    <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'web/js/active.js' %}"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+<footer>
+    <div class="footer-content">
+        <h3>Charity Web App</h3>
+        <p>we help disabled and oprhan people to develop their skills and also live a promising life like others. </p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+         </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2021 <a href="tel: +256 775 555 464">AndySolutions</a>  </p>
+        <div class="footer-menu">
+            <ul class="f-menu">
+               <li><a href="">Home</a></li>
+               <li><a href="">Articles</a></li>
+               <li><a href="">About Us</a></li>
+               <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</footer>
+
+</html>
